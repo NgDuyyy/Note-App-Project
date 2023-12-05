@@ -1,0 +1,125 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "17.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) {
+			"hgap": 10
+			"vgap": 10
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 224, 217, 251, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+				"hgap": 5
+			} ) {
+				name: "pnHead"
+				"background": new java.awt.Color( 246, 186, 213, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "pnHeadLeft"
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "tFSearch"
+						"text": "Search"
+						"font": new java.awt.Font( "Segoe UI", 0, 16 )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": "Enter"
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "East"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "labelLocation"
+					"text": "Curent location:"
+					"font": new java.awt.Font( "Segoe UI", 0, 16 )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 1
+				"rows": 2
+				"hgap": 10
+				"vgap": 10
+			} ) {
+				name: "pnMenu"
+				"background": new java.awt.Color( 204, 204, 255, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) ) {
+					name: "pnMenuTop"
+					"background": new java.awt.Color( 204, 204, 255, 255 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"rows": 5
+						"columns": 1
+						"hgap": 5
+						"vgap": 5
+					} ) {
+						name: "pnButton"
+						"background": new java.awt.Color( 204, 204, 255, 255 )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btOpen"
+							"text": "Open Note"
+							"horizontalAlignment": 10
+							"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btSave"
+							"text": "Save Note"
+							"horizontalAlignment": 10
+							"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btAdd"
+							"text": "Add Note"
+							"horizontalAlignment": 10
+							"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btAddImg"
+							"text": "Add Image"
+							"horizontalAlignment": 10
+							"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "btDelete"
+							"text": "Delete Note"
+							"font": new java.awt.Font( "Segoe UI", 0, 16 )
+						} )
+					} )
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+				"vgap": 5
+			} ) {
+				name: "pnMain"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "areaNote"
+						"text": "Enter the content to note ..."
+						"font": new java.awt.Font( "Segoe UI", 0, 16 )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tFContent"
+					"cursor": new java.awt.Cursor( 2 )
+					"text": "Content"
+					"font": new java.awt.Font( "Segoe UI", 0, 20 )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 495, 340 )
+		} )
+	}
+}
